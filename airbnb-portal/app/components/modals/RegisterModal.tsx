@@ -92,7 +92,7 @@ const RegisterModal = () => {
         outline
         label='Continue with Google'
         icon={FcGoogle}
-        onClick={() => {}}
+        onClick={() => signIn('google')}
       />
 
       <Button
@@ -103,7 +103,7 @@ const RegisterModal = () => {
       />
 
       <div
-        className='mt-4 font-light text-center  text-neutral-500'
+        className='mt-4 font-light text-center text-neutral-500'
       >
         <div className='flex flex-row items-center justify-center gap-2'>
           <div>
@@ -112,7 +112,7 @@ const RegisterModal = () => {
 
           <div
             onClick={registerModal.onClose}
-            className='cursor-pointer  text-neutral-800 hover:underline'
+            className='cursor-pointer text-neutral-800 hover:underline'
           >
             Login
           </div>
