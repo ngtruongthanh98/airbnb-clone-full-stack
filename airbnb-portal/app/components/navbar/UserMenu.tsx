@@ -25,7 +25,13 @@ const UserMenu: React.FC<UserMenuProps> = ({
     setIsOpen((prev) => !prev);
   }, []);
 
-  console.log('currentUser: ', currentUser);
+  const onRent = useCallback(() => {
+    if (!currentUser) {
+      return loginModal.onOpen()
+    }
+
+    // Open Rent Modal
+  }, [currentUser, loginModal])
 
   return (
     <div className='relative'>
